@@ -19,17 +19,56 @@
 body {
   background: var(--gradient-colour);
   height: 100%;
-
+  margin: 0 10px;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 .white-background {
-  margin: 30px;
+  margin: 30px 10px;
   padding: 30px 20px 20px 20px;
   min-height: 300px;
   background-color: var(--white);
   border-radius: 20px;
+}
+
+.logo {
+  max-width: 90px;
+}
+
+.search {
+  max-width: 200px;
+}
+
+.search-input input {
+  width: 70%;
+}
+
+/*Navigation*/
+nav,
+#hamburger-menu,
+.menu,
+.navigation__icon {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: inline-block;
+  float: left;
+  position: fixed;
+  z-index: 2;
+}
+
+nav li {
+  display: block;
+  margin: 20px 20px;
+}
+
+.nav_textlinks {
+  border: 1px solid var(--darkblue-colour);
+  padding: 5px;
+  background-color: var(--white);
+  margin-top: -80px;
 }
 
 /*Home page*/
