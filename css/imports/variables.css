@@ -1,0 +1,14 @@
+:root {
+  --gradient-colour: linear-gradient(#812f33, #705e78);
+  --white: #fff;
+  --darkblue-colour: #1b203d;
+  --blue-colour: #717487;
+  --darkpink-colour: #812f33;
+  --pink-colour: #e5a4a7;
+  --darkpurple-colour: #705e78;
+  --purple-colour: #b4aeb7;
+  --darkorange-colour: #f3994b;
+  --lightorange-colour: #ffd8b7;
+  --darkyellow-colour: #f5e3ab;
+  --yellow-colour: #f5eed9;
+}
