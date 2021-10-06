@@ -27,6 +27,14 @@ body {
   color: var(--darkblue-colour);
 }
 
+.cta_orange {
+  background-color: var(--darkorange-colour);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 7px 25px;
+}
+
 footer {
   background-color: var(--darkblue-colour);
   position: fixed;
@@ -35,3 +43,59 @@ footer {
   margin: auto -20px;
   padding: 10px;
 }
+
+/*Contact page*/
+.fa-envelope {
+  padding-left: 20px;
+}
+
+.contact-paragraph {
+  text-align: center;
+  margin: auto;
+}
+
+.contact-formbackground {
+  background-color: var(--lightyellow-colour);
+  margin: 0 -20px;
+  padding: 20px;
+}
+
+.form-wrapper {
+  flex: 1;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+
+form {
+  margin: auto 40px;
+}
+
+form label {
+  margin-top: 18px;
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea,
+form select {
+  border: 2px solid var(--darkblue-colour);
+  border-radius: 3px;
+}
+
+form textarea {
+  height: 80px;
+}
+
+.cta-send {
+  position: relative;
+  margin-top: 30px;
+}
+
+/*laptop*/
+/*
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+*/

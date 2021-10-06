@@ -1,13 +1,19 @@
 body {
-  font-family: 'Montserrat Regular';
+  font-family: 'Montserrat Regular', Verdana, Geneva, Tahoma, sans-serif;
   color: var(--darkblue-colour);
   font-size: 0.75rem;
 }
 
 h1 {
-  font-family: 'BebasNeue Regular';
+  font-family: 'BebasNeue Regular', Arial, Helvetica, sans-serif;
   text-align: center;
   font-size: 1.8rem;
+}
+
+.cta_orange {
+  font-family: 'Montserrat SemiBold';
+  font-size: 0.7rem;
+  letter-spacing: 2px;
 }
 
 .nav_textlinks a {
@@ -20,4 +26,15 @@ footer {
   color: var(--white-colour);
   font-size: 0.5rem;
   text-align: center;
+}
+
+/*Contact page*/
+.contact-paragraph p {
+  font-size: 0.8rem;
+  font-family: 'Montserrat SemiBold';
+}
+
+form label {
+  font-size: 0.75rem;
+  font-family: 'Montserrat SemiBold';
 }
