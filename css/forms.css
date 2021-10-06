@@ -1,0 +1,92 @@
+a {
+  color: var(--darkblue-colour);
+}
+
+.fa-arrow-alt-circle-left {
+  font-size: 2rem;
+}
+
+.ContactImageContainer,
+.SignUpImageContainer {
+  background-repeat: no-repeat;
+  height: 150px;
+  margin: auto -20px;
+  background-size: 100%;
+}
+
+.formbackground {
+  background-color: var(--lightyellow-colour);
+  margin: 0 -20px;
+  padding: 20px 20px 50px 20px;
+}
+
+.form-wrapper {
+  flex: 1;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+
+form {
+  margin: auto 40px;
+}
+
+form label {
+  margin-top: 18px;
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea,
+form select {
+  border: 2px solid var(--darkblue-colour);
+  border-radius: 3px;
+}
+
+form textarea {
+  height: 80px;
+}
+
+form input {
+  padding: 5px 0;
+}
+
+footer {
+  display: none;
+}
+
+/*Contact*/
+
+.fa-envelope {
+  padding-left: 20px;
+}
+
+.contact-paragraph {
+  text-align: center;
+  margin: auto;
+}
+
+.ContactImageContainer {
+  background-image: url(../../images/contact.jpg);
+  background-position-y: -280px;
+}
+
+.cta-send {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+/*Sign up*/
+.SignUpImageContainer {
+  background-image: url(../../images/signup.jpg);
+  background-position-y: -230px;
+}
+
+.cta-createAccount {
+  margin-top: 40px;
+}
+
+.cta_signUp {
+  text-decoration: none;
+}

@@ -1,0 +1,14 @@
+.productsContainer {
+  margin: auto 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.shopProductFrame {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  max-width: 80%;
+}
