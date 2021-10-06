@@ -1,3 +1,8 @@
+a {
+  text-decoration: none;
+  color: var(--darkblue-colour);
+}
+
 .productsContainer {
   margin: auto 20px;
   display: flex;
@@ -7,8 +12,25 @@
 .shopProductFrame {
   display: flex;
   flex-direction: row;
+  margin: 10px auto;
+  gap: 20px;
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 5px;
+  padding: 20px 10px;
+}
+
+.shopProductImage {
+  flex: 2;
+  margin: auto;
+  margin-left: 10px;
+}
+
+.shopProductInfo {
+  flex: 3;
+  padding-left: 20px;
+  padding-buttom: 10px;
 }
 
 img {
-  max-width: 80%;
+  max-width: 100%;
 }
