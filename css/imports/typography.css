@@ -1,0 +1,23 @@
+body {
+  font-family: 'Montserrat Regular';
+  color: var(--darkblue-colour);
+  font-size: 0.75rem;
+}
+
+h1 {
+  font-family: 'BebasNeue Regular';
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.nav_textlinks a {
+  text-decoration: none;
+  color: var(--darkblue-colour);
+  font-size: 1rem;
+}
+
+footer {
+  color: var(--white-colour);
+  font-size: 0.5rem;
+  text-align: center;
+}

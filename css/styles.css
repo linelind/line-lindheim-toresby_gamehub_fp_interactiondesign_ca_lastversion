@@ -1,77 +1,37 @@
+@import 'imports/navigation.css';
 @import 'imports/variables.css';
+@import 'imports/typography.css';
 
 @font-face {
-  font-family: 'Closeness Outline';
-  src: url('../Fonts/closeness.outline-regular.ttf') format('truetype');
+  font-family: 'BebasNeue Regular';
+  src: url('../fonts/BebasNeue-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Montserrat Regular';
-  src: url('../Fonts/Montserrat-Regular.ttf') format('truetype');
+  src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Montserrat SemiBold';
-  src: url('../Fonts/Montserrat-SemiBold.ttf') format('truetype');
+  src: url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
 }
 
 /*layout*/
 body {
-  background: var(--gradient-colour);
-  height: 100%;
-  margin: 0 10px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: var(--white-colour);
+  margin: 20px;
 }
 
-.white-background {
-  margin: 30px 10px;
-  padding: 30px 20px 20px 20px;
-  min-height: 300px;
-  background-color: var(--white);
-  border-radius: 20px;
+.fas {
+  color: var(--darkblue-colour);
 }
 
-.logo {
-  max-width: 90px;
-}
-
-.search {
-  max-width: 200px;
-}
-
-.search-input input {
-  width: 70%;
-}
-
-/*Navigation*/
-nav,
-#hamburger-menu,
-.menu,
-.navigation__icon {
-  display: none;
-}
-
-#hamburger-menu:checked ~ nav {
-  display: inline-block;
-  float: left;
+footer {
+  background-color: var(--darkblue-colour);
   position: fixed;
-  z-index: 2;
-}
-
-nav li {
-  display: block;
-  margin: 20px 20px;
-}
-
-.nav_textlinks {
-  border: 1px solid var(--darkblue-colour);
-  padding: 5px;
-  background-color: var(--white);
-  margin-top: -80px;
-}
-
-/*Home page*/
-.image-home {
-  max-width: 100%;
+  bottom: 0px;
+  width: 100%;
+  margin: auto -20px;
+  padding: 10px;
 }
