@@ -27,12 +27,20 @@ body {
   color: var(--darkblue-colour);
 }
 
-.cta_orange {
-  background-color: var(--darkorange-colour);
+.cta_orange,
+.cta_purple {
   color: white;
   border: none;
   border-radius: 3px;
   padding: 7px 25px;
+}
+
+.cta_orange {
+  background-color: var(--darkorange-colour);
+}
+
+.cta_purple {
+  background-color: var(--darkpurple-colour);
 }
 
 footer {

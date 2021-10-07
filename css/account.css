@@ -1,0 +1,98 @@
+/*Profile info*/
+img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.myProfileContainer {
+  background-color: var(--lightpurple-colour);
+  margin: auto -20px;
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.myProfileInfo {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  margin-right: 30px;
+}
+
+.myProfileInfo p {
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.myProfileImage {
+  flex: 1;
+  margin-left: 30px;
+}
+
+.myAccountButton {
+  max-width: 150px;
+}
+
+/*Sell game*/
+.sellGameBackground {
+  background-color: var(--lightyellow-colour);
+  margin: 20px auto;
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+
+.form-wrapper {
+  flex: 1;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+
+form {
+  margin: auto 40px;
+}
+
+form label {
+  margin-top: 18px;
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  border: 2px solid var(--darkblue-colour);
+  border-radius: 3px;
+}
+
+form textarea {
+  height: 80px;
+}
+
+form input {
+  padding: 5px;
+}
+
+#price,
+#year {
+  max-width: 40%;
+}
+
+.sellGameBackground h2,
+.activeAdsContainer h2 {
+  text-align: center;
+}
+
+.activeAdsContainer h2 {
+  margin-top: 40px;
+}
+
+.buttonUploadImage {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: var(--yellow-colour);
+}
+
+.editAdButton {
+  max-width: 70px;
+}

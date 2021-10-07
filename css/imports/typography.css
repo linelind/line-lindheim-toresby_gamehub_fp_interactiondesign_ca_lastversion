@@ -14,10 +14,12 @@ h2 {
   font-size: 1rem;
 }
 
-.cta_orange {
+.cta_orange,
+.cta_purple {
   font-family: 'Montserrat SemiBold';
   font-size: 0.7rem;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
 .nav_textlinks a {

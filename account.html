@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Your account page at Game Hub. Get an overview of your information and create ads for games you want to sell here." />
     <title>Game Hub | Account page</title>
+    <link href="css/shop.css" rel="stylesheet" />
+    <link href="css/account.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous" />
   </head>
@@ -36,7 +38,61 @@
     </header>
     <main>
       <h1>Hi Jane!</h1>
-      <section class="container"></section>
+
+      <section class="myProfileContainer">
+        <div class="myProfileImage">
+          <img src="images/homepage_image.jpg" alt="Profile picture showing hand holding a controller. " />
+        </div>
+        <div class="myProfileInfo">
+          <h2>Jane Doe</h2>
+          <p>Joined 2021</p>
+          <input type="button" value="Edit my profile" class="cta_purple myAccountButton" />
+        </div>
+      </section>
+
+      <section class="sellGameBackground">
+        <h2>Sell a Game</h2>
+        <form action="form-success.php" method="POST">
+          <div class="form-wrapper">
+            <label for="title">Game title</label>
+            <input type="text" id="title" name="Game title" required />
+            <label for="price">Price (in NOK)</label>
+            <input type="text" id="price" name="Price" required />
+            <label for="year">Year released</label>
+            <input type="text" id="year" name="Year" required />
+            <label for="description">Description</label>
+            <textarea id="description" name="description"></textarea>
+            <input type="button" value="upload image(s) +" class="buttonUploadImage" />
+          </div>
+          <input type="submit" value="Create ad" class="cta_orange" />
+        </form>
+      </section>
+
+      <section class="activeAdsContainer">
+        <h2>My Active Ads</h2>
+        <div class="shopProductFrame">
+          <div class="shopProductImage">
+              <img src="images/products/GameHub_covers.jpg" alt="Game cover Ping Pong." />
+          </div>
+          <div class="shopProductInfo">
+              <h3>Ping Pong</h2>
+              <p>(2015)</p>
+              <p>299 NOK</p>
+              <p class="cta_purple editAdButton">Edit ad</p>
+          </div>
+        </div>
+        <div class="shopProductFrame">
+          <div class="shopProductImage">
+              <img src="images/products/GameHub_covers9.jpg" alt="Game cover Cyberpunk." />
+          </div>
+          <div class="shopProductInfo">
+              <h3>Cyberpunk</h2>
+              <p>(2021)</p>
+              <p>699 NOK</p>
+              <p class="cta_purple editAdButton">Edit ad</p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <p>&copy; 2021 Game Hub. All Right reserved Game Hub.</p>
