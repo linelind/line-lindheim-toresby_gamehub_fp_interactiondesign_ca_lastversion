@@ -21,7 +21,8 @@ h2 {
 .cta_orange,
 .cta_purple,
 .cta_placeOrder,
-.ctaHome {
+.ctaHome,
+.homeLabel {
   font-family: 'Montserrat SemiBold';
   letter-spacing: 1px;
   text-align: center;

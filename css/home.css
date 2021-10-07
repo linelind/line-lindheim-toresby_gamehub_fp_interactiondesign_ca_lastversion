@@ -1,0 +1,131 @@
+.homeBackground {
+  background-color: var(--lightgrey-colour);
+  margin: -20px;
+  padding: 0 20px 20px 20px;
+}
+
+h1 {
+  padding-top: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.newsContainer img {
+  max-width: 100%;
+}
+
+.homeLabel {
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 30px auto -20px 20px;
+  position: relative;
+  z-index: 10;
+  color: var(--white-colour);
+  text-align: center;
+  max-width: max-content;
+}
+
+.homeLabelNew {
+  background-color: var(--darkpurple-colour);
+}
+
+.homeLabelDeal {
+  background-color: var(--darkorange-colour);
+}
+
+.newsInfoContainer {
+  display: flex;
+  margin-top: -20px;
+  height: 70px;
+  margin-bottom: 30px;
+}
+
+.newsInfo {
+  flex: 2;
+  background-color: #0e131d;
+  color: var(--lightyellow-colour);
+  height: 100%;
+}
+
+.newsInfo h2,
+.newsInfo p {
+  padding-left: 25px;
+  line-height: 10px;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.newsLink {
+  flex: 1;
+  background-color: var(--lightyellow-colour);
+  height: 100%;
+  text-align: center;
+}
+
+.newsLink p {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  line-height: 5px;
+  color: #0e131d;
+}
+
+.fa-long-arrow-alt-right {
+  font-size: 1.6rem;
+  margin-left: 40px;
+}
+
+/*Explore*/
+
+.exploreBackground {
+  background-image: url(/images/exploreshop.jpg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position-x: right;
+  margin: 40px -20px;
+  padding: 15px;
+  background-color: #1d1d1d;
+}
+
+.exploreContainer img {
+  max-width: 20%;
+  padding-right: 5px;
+}
+
+.exploreInfo,
+.exploreArrow {
+  color: var(--white-colour);
+}
+
+.exploreInfo {
+  display: flex;
+  padding-top: 10px;
+  font-size: 1rem;
+  align-items: center;
+  gap: 0;
+}
+
+/*Sell old games*/
+.sellGamesContainer {
+  background-image: url(/images/sellyourgames.jpg);
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position-x: right;
+  background-position-y: center;
+  margin: 40px auto;
+  padding: 15px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.sellGamesContainer p {
+  max-width: 230px;
+  line-height: 20px;
+}
+
+.sellGamesContainer a {
+  text-decoration: none;
+  color: var(--white-colour);
+}

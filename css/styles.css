@@ -29,7 +29,7 @@ body {
 
 .cta_orange,
 .cta_purple {
-  color: white;
+  color: var(--white-colour);
   border: none;
   border-radius: 3px;
   padding: 7px 25px;

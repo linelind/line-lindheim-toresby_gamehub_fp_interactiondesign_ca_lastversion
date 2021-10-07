@@ -23,7 +23,7 @@ body {
   text-decoration: none;
   background-color: var(--darkblue-colour);
   padding: 15px 20px;
-  color: white;
+  color: var(--white-colour);
   border-radius: 3px;
 }
 

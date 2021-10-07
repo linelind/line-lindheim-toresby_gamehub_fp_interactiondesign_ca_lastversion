@@ -14,7 +14,7 @@ a {
   flex-direction: row;
   margin: 10px auto;
   gap: 20px;
-  border: 1px solid rgb(226, 226, 226);
+  border: 1px solid var(--lightgrey-colour);
   border-radius: 5px;
   padding: 20px 10px;
 }

@@ -98,7 +98,7 @@ img {
 
 .payment-alternative {
   padding: 5px 15px;
-  border: 1px solid rgb(226, 226, 226);
+  border: 1px solid var(--lightgrey-colour);
   border-radius: 5px;
   color: var(--darkblue-colour);
 }
@@ -122,7 +122,7 @@ img {
 .cta_placeOrder {
   text-decoration: none;
   margin: 50px 0;
-  color: white;
+  color: var(--white-colour);
   border-radius: 5px;
   padding: 20px;
   background-color: var(--darkorange-colour);
