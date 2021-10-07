@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Our secure checkout takes you through a few easy steps so that you can start playing your new games before you know it." />
+    <title>Game Hub | Checkout</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/checkout.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="images/gamehub_logo.png" alt="Image link of Game Hub logo that bring you to the home page." class="logo" /></a>
+      <div class="nav_icons">
+        <a href="signup.html"><i class="fas fa-user-ninja"></i></a>
+        <a href="checkout.html"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+      <a href="index.html"><i class="far fa-arrow-alt-circle-left"></i></a>
+    </header>
+    <main>
+      <h1>Checkout</h1>
+      <div class="orderBackground">
+        <h2>Your order</h2>
+        <section class="orderContainer">
+          <div class="orderImage">
+            <img src="images/products/GameHub_covers8.jpg" alt="Game cover BOXER" />
+          </div>
+          <div class="orderDetails">
+            <h3>Boxer</h3>
+            <p>2018</p>
+            <div class="quantityContainer">
+              <p>Quantity</p>
+              <div>
+                <label for="quantity"></label>
+                <select id="quantity" name="select-quantity">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </div>
+            <p>499 NOK</p>
+          </div>
+          <div class="removeItem">
+            <i class="fas fa-trash-alt"></i>
+          </div>
+        </section>
+        <section class="orderContainer">
+          <div class="orderImage">
+            <img src="images/products/GameHub_covers5.jpg" alt="Game cover Assassin" />
+          </div>
+          <div class="orderDetails">
+            <h3>Assassin</h3>
+            <p>2021</p>
+            <div class="quantityContainer">
+              <p>Quantity</p>
+              <div>
+                <label for="quantity"></label>
+                <select id="quantity" name="select-quantity">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </div>
+            <p>599 NOK</p>
+          </div>
+          <div class="removeItem">
+            <i class="fas fa-trash-alt"></i>
+          </div>
+        </section>
+        <section class="orderTotal">
+          <p>Total: 1098 NOK</p>
+        </section>
+      </div>
+
+      <section class="shippingContainer">
+        <h2>Shipping Information</h2>
+        <form action="form-success.php" method="POST">
+          <div class="form-wrapper">
+            <label for="fullname">Full name</label>
+            <input type="text" id="fullname" name="Full name" required />
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required />
+            <div class="formSmallFields">
+              <div class="zipContainer">
+                <label for="zipcode">Zip code</label>
+                <input type="text" id="zipcode" name="zipcode" required />
+              </div>
+              <div class="cityContainer">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" required />
+              </div>
+            </div>
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="Email" required />
+            <label for="phone">Phone number</label>
+            <input type="tel" name="phone" id="phone" />
+          </div>
+        </form>
+      </section>
+
+      <section class="paymentContainer">
+        <h2>Credit Card Info</h2>
+        <div class="payment-methods">
+          <div class="payment-alternative">
+            <i class="fab fa-cc-visa"></i>
+          </div>
+          <div class="payment-alternative">
+            <i class="fab fa-cc-mastercard"></i>
+          </div>
+          <div class="payment-alternative">
+            <i class="fab fa-cc-amex"></i>
+          </div>
+        </div>
+        <form action="form-success.php" method="POST">
+          <section class="form-wrapper">
+            <label for="cardnumber">Card number</label>
+            <input type="text" id="cardnumber" name="card number" required />
+            <label for="cardholder">Cardholder name</label>
+            <input type="text" id="cardholder" name="cardholder" required />
+            <div class="selectDate">
+                <label for="expiredate">Expire date</label>
+                <select id="expiredate" name="expiredate" required>
+                  <option value=""">Select option</option>
+                  <option value="1">01/22</option>
+                  <option value="2">02/22</option>
+                  <option value="3">03/22</option>
+                  <option value="4">04/22</option>
+                  <option value="5">05/22</option>
+                 </select>
+            </div>
+            <label for="cvv">CVV</label>
+            <input type="tel" name="cvv" id="cvv"  required/>
+            <a href="success.html" class="cta_placeOrder">
+              Place order
+              <i class="fas fa-shipping-fast"></i>
+            </a>
+          </section>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2021 Game Hub. All Right reserved Game Hub.</p>
+    </footer>
+  </body>
+</html>

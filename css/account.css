@@ -42,36 +42,6 @@ img {
   border-radius: 5px;
 }
 
-.form-wrapper {
-  flex: 1;
-  display: flex;
-  text-align: left;
-  flex-direction: column;
-}
-
-form {
-  margin: auto 40px;
-}
-
-form label {
-  margin-top: 18px;
-  margin-bottom: 5px;
-}
-
-form input,
-form textarea {
-  border: 2px solid var(--darkblue-colour);
-  border-radius: 3px;
-}
-
-form textarea {
-  height: 80px;
-}
-
-form input {
-  padding: 5px;
-}
-
 #price,
 #year {
   max-width: 40%;

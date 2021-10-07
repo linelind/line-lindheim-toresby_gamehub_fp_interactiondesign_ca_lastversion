@@ -19,14 +19,20 @@ h2 {
 }
 
 .cta_orange,
-.cta_purple {
+.cta_purple,
+.cta_placeOrder {
   font-family: 'Montserrat SemiBold';
-  font-size: 0.7rem;
   letter-spacing: 1px;
   text-align: center;
 }
 
-.addToCartButton {
+.cta_orange,
+.cta_purple {
+  font-size: 0.7rem;
+}
+
+.addToCartButton,
+.cta_placeOrder {
   font-size: 0.85rem;
 }
 
@@ -55,5 +61,11 @@ footer {
 
 form label {
   font-size: 0.75rem;
+  font-family: 'Montserrat SemiBold';
+}
+
+/*Checkout page*/
+.orderTotal {
+  font-size: 1.1rem;
   font-family: 'Montserrat SemiBold';
 }
