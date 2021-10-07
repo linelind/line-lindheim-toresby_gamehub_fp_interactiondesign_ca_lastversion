@@ -1,0 +1,37 @@
+header,
+footer {
+  display: none;
+}
+
+body {
+  background-color: var(--lightpurple-colour);
+}
+
+.successContainer {
+  background-color: var(--white-colour);
+  margin: 40px 20px;
+  text-align: center;
+  padding: 100px 40px;
+}
+
+.fa-check {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.ctaHome {
+  text-decoration: none;
+  background-color: var(--darkblue-colour);
+  padding: 15px 20px;
+  color: white;
+  border-radius: 3px;
+}
+
+.successContainer p {
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.infoContainer {
+  margin-bottom: 80px;
+}
