@@ -14,12 +14,25 @@ h2 {
   font-size: 1rem;
 }
 
+.productPrice {
+  font-size: 1.1rem;
+}
+
 .cta_orange,
 .cta_purple {
   font-family: 'Montserrat SemiBold';
   font-size: 0.7rem;
   letter-spacing: 1px;
   text-align: center;
+}
+
+.addToCartButton {
+  font-size: 0.85rem;
+}
+
+.label_new,
+.productPrice {
+  font-family: 'Montserrat SemiBold';
 }
 
 .nav_textlinks a {

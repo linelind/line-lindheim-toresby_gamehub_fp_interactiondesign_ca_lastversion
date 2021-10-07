@@ -43,6 +43,15 @@ body {
   background-color: var(--darkpurple-colour);
 }
 
+.label_new {
+  padding: 5px 0px;
+  min-width: 50px;
+  max-width: 50px;
+  background-color: var(--darkpurple-colour);
+  color: var(--white-colour);
+  text-align: center;
+}
+
 footer {
   background-color: var(--darkblue-colour);
   position: relative;
