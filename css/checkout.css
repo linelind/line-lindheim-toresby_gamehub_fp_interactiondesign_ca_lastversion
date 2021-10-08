@@ -3,6 +3,10 @@
   top: 20px;
 }
 
+.fa-user-ninja {
+  font-size: 2rem;
+}
+
 a {
   color: var(--darkblue-colour);
 }
@@ -64,6 +68,10 @@ img {
 }
 
 /*Shipping information*/
+.form-wrapper {
+  max-width: 270px;
+  margin: auto;
+}
 
 .formSmallFields {
   display: flex;
@@ -130,4 +138,55 @@ img {
 
 .fa-shipping-fast {
   color: var(--white-colour);
+}
+
+@media only screen and (min-width: 500px) {
+  img {
+    width: 200px;
+  }
+
+  .orderContainer {
+    width: 420px;
+    margin: 50px auto;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .flexContainer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .flexContainerOrder {
+    flex: 1;
+  }
+
+  .flexContainerForms {
+    flex: 2;
+  }
+
+  img {
+    width: 170px;
+  }
+
+  .orderContainer {
+    width: 350px;
+    margin: 50px auto;
+  }
+
+  .orderBackground {
+    border-radius: 5px 0px 0px 5px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+  }
+
+  .paymentContainer {
+    margin-top: 100px;
+    margin-bottom: 80px;
+  }
+
+  .cta_placeOrder {
+    margin-top: 90px;
+  }
 }
