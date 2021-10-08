@@ -47,6 +47,10 @@ img {
   max-width: 40%;
 }
 
+.sellGameAccountImage {
+  display: none;
+}
+
 .sellGameBackground h2,
 .activeAdsContainer h2 {
   text-align: center;
@@ -65,4 +69,87 @@ img {
 
 .editAdButton {
   max-width: 70px;
+}
+
+@media only screen and (min-width: 500px) {
+  .myProfileInfo {
+    margin-left: 20px;
+  }
+
+  .sellGameBackground {
+    max-width: 450px;
+  }
+
+  .formSellGame {
+    max-width: 300px;
+    margin: auto;
+  }
+
+  .buttonCreateAd {
+    margin: 40px auto;
+    padding: 15px 30px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .myProfileContainer {
+    margin: auto;
+    max-width: 480px;
+  }
+
+  .myProfileImage {
+    max-width: 140px;
+    margin-right: 50px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .myProfileContainer {
+    padding: 40px 20px;
+  }
+
+  .myProfileImage img {
+    max-width: 150px;
+    margin-left: 20px;
+  }
+
+  .productsContainer {
+    max-width: 1000px;
+    margin: 40px auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .sellGameBackground {
+    max-width: 1000px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .sellGamesAccountFlex {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .sellGameAccountImage {
+    display: inline;
+    flex: 1;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .sellGameAccountForm {
+    flex: 1;
+  }
+
+  .form-wrapper {
+    min-width: 300px;
+  }
+
+  .sellGameAccountImage img {
+    max-width: 70%;
+
+    border-radius: 100%;
+  }
 }

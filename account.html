@@ -39,7 +39,6 @@
     </header>
     <main>
       <h1>Hi Jane!</h1>
-
       <section class="myProfileContainer">
         <div class="myProfileImage">
           <img src="images/homepage_image.jpg" alt="Profile picture showing hand holding a controller. " />
@@ -50,10 +49,11 @@
           <input type="button" value="Edit my profile" class="cta_purple myAccountButton" />
         </div>
       </section>
-
       <section class="sellGameBackground">
         <h2>Sell a Game</h2>
-        <form action="form-success.php" method="POST">
+        <div class="sellGamesAccountFlex">
+          <div class="sellGameAccountForm">
+        <form action="form-success.php" method="POST" class="formSellGame">
           <div class="form-wrapper">
             <label for="title">Game title</label>
             <input type="text" id="title" name="Game title" required />
@@ -65,32 +65,38 @@
             <textarea id="description" name="description"></textarea>
             <input type="button" value="upload image(s) +" class="buttonUploadImage" />
           </div>
-          <input type="submit" value="Create ad" class="cta_orange" />
+          <input type="submit" value="Create ad" class="cta_orange buttonCreateAd" />
         </form>
+      </div>
+        <div class="sellGameAccountImage">
+          <img src="/images/sellgames_alt.jpg" alt="hand holding a controller.">
+        </div>
+      </div>
       </section>
-
       <section class="activeAdsContainer">
         <h2>My Active Ads</h2>
-        <div class="shopProductFrame">
-          <div class="shopProductImage">
-              <img src="images/products/GameHub_covers.jpg" alt="Game cover Ping Pong." />
+        <div class="productsContainer">
+          <div class="shopProductFrame">
+            <div class="shopProductImage">
+               <img src="images/products/GameHub_covers.jpg" alt="Game cover Ping Pong." />
+            </div>
+            <div class="shopProductInfo">
+               <h3>Ping Pong</h2>
+               <p>(2015)</p>
+               <p>299 NOK</p>
+               <p class="cta_purple editAdButton">Edit ad</p>
+            </div>
           </div>
-          <div class="shopProductInfo">
-              <h3>Ping Pong</h2>
-              <p>(2015)</p>
-              <p>299 NOK</p>
-              <p class="cta_purple editAdButton">Edit ad</p>
-          </div>
-        </div>
-        <div class="shopProductFrame">
-          <div class="shopProductImage">
-              <img src="images/products/GameHub_covers9.jpg" alt="Game cover Cyberpunk." />
-          </div>
-          <div class="shopProductInfo">
-              <h3>Cyberpunk</h2>
-              <p>(2021)</p>
-              <p>699 NOK</p>
-              <p class="cta_purple editAdButton">Edit ad</p>
+          <div class="shopProductFrame">
+            <div class="shopProductImage">
+               <img src="images/products/GameHub_covers9.jpg" alt="Game cover Cyberpunk." />
+            </div>
+            <div class="shopProductInfo">
+               <h3>Cyberpunk</h2>
+               <p>(2021)</p>
+               <p>699 NOK</p>
+               <p class="cta_purple editAdButton">Edit ad</p>
+            </div>
           </div>
         </div>
       </section>
