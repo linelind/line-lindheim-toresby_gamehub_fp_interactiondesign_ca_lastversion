@@ -11,38 +11,42 @@
   </head>
   <body>
     <header>
-      <a href="index.html"><i class="far fa-arrow-alt-circle-left"></i></a>
+      <a href="index.html"><i class="far fa-arrow-alt-circle-left backContactPage"></i></a>
     </header>
     <main>
-      <h1>
-        Contact us
-        <i class="fas fa-envelope"></i>
-      </h1>
-      <section class="contact-paragraph">
-        <p>Have a question?</p>
-        <p>Please fill out our contact form.</p>
-      </section>
-      <div class="ContactImageContainer"></div>
-      <div class="formbackground">
-        <form action="form-success.php" method="POST">
-          <div class="form-wrapper">
-            <label for="name">Full name</label>
-            <input type="text" id="name" name="Name" required />
-            <label for="email">Email</label>
-            <input type="email" id="email" name="Email" required />
-            <label for="topic">Question topic</label>
-            <select id="topic" name="Choose topic">
-              <option value="Delivery">Delivery</option>
-              <option value="Payment">Payment</option>
-              <option value="Selling game">Selling game</option>
-              <option value="Buying game">Buying game</option>
-              <option value="Other">Other</option>
-            </select>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
+      <div class="formContainer_contact">
+        <div class="contactFormContainerFlex">
+          <h1>
+            Contact us
+            <i class="fas fa-envelope"></i>
+          </h1>
+          <section class="contact-paragraph">
+            <p>Have a question?</p>
+            <p>Please fill out our contact form.</p>
+          </section>
+          <div class="contactImageContainer"></div>
+          <div class="formbackground">
+            <form action="form-success.php" method="POST" class="form">
+              <div class="form-wrapper">
+                <label for="name">Full name</label>
+                <input type="text" id="name" name="Name" required />
+                <label for="email">Email</label>
+                <input type="email" id="email" name="Email" required />
+                <label for="topic">Question topic</label>
+                <select id="topic" name="Choose topic">
+                  <option value="Delivery">Delivery</option>
+                  <option value="Payment">Payment</option>
+                  <option value="Selling game">Selling game</option>
+                  <option value="Buying game">Buying game</option>
+                  <option value="Other">Other</option>
+                </select>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <input type="submit" value="Send" class="cta_orange cta-send" />
+            </form>
           </div>
-          <input type="submit" value="Send" class="cta_orange cta-send" />
-        </form>
+        </div>
       </div>
     </main>
     <footer>

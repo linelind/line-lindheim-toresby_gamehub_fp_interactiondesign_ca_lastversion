@@ -54,6 +54,8 @@ body {
 
 .fa-arrow-alt-circle-left {
   font-size: 2rem;
+  z-index: 1000;
+  position: relative;
 }
 
 footer {
@@ -96,4 +98,11 @@ form textarea {
 
 form input {
   padding: 5px;
+}
+
+@media only screen and (min-width: 800px) {
+  .fa-arrow-alt-circle-left {
+    font-size: 2.5rem;
+    padding: 20px;
+  }
 }
