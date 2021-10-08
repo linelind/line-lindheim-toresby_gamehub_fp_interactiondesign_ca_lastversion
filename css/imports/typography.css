@@ -56,6 +56,11 @@ footer {
   text-align: center;
 }
 
+/*Home page*/
+.homeLabel {
+  font-size: 0.9rem;
+}
+
 /*Contact page*/
 .contact-paragraph p {
   font-size: 0.8rem;
@@ -71,4 +76,28 @@ form label {
 .orderTotal {
   font-size: 1.1rem;
   font-family: 'Montserrat SemiBold';
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .newsInfo p {
+    font-size: 0.75rem;
+  }
 }

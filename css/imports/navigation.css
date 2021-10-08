@@ -38,6 +38,10 @@
   position: relative;
 }
 
+.signUpTextButton {
+  display: none;
+}
+
 .fa-bars,
 .fa-shopping-cart,
 .fa-user-ninja {
@@ -90,6 +94,68 @@ nav li {
 
 .fa-shopping-cart {
   margin-left: 20px;
+}
+
+@media only screen and (min-width: 900px) {
+  .signUpTextButton {
+    display: inline-flex;
+    text-decoration: none;
+    color: var(--white-colour);
+    background-color: var(--darkpurple-colour);
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-right: 10px;
+  }
+
+  .accountIcon {
+    display: none;
+  }
+
+  .nav_icons {
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+
+  .search-input {
+    justify-content: center;
+  }
+
+  .search-input input {
+    width: 500px;
+    position: absolute;
+  }
+
+  .search-icon {
+    position: relative;
+    left: 235px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  nav {
+    display: inline-block;
+  }
+
+  .nav_textlinks {
+    display: inline-flex;
+    padding: 0;
+    position: absolute;
+    top: 70px;
+    border: none;
+  }
+
+  .hamburger-label {
+    display: none;
+  }
+
+  nav li {
+    margin: 0px 25px;
+  }
+
+  .logo {
+    max-width: 100px;
+    margin-bottom: -10px;
+  }
 }
 
 /* laptop */
