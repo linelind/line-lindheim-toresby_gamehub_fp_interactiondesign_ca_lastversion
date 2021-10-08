@@ -57,3 +57,82 @@
   text-align: center;
   margin-bottom: 25px;
 }
+
+@media only screen and (min-width: 500px) {
+  .mainProductLabel {
+    margin-left: 75px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .ctaContainer,
+  .detailsContainer {
+    max-width: 400px;
+    margin: 30px auto;
+  }
+
+  .imageContainer {
+    gap: 0px;
+    margin-left: 150px;
+  }
+
+  .mainProductLabel {
+    margin-left: 210px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .mainProductLabel {
+    margin-left: 235px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .productContainerFlex img {
+    margin-left: 0;
+    margin-left: 10px;
+  }
+  .productImage_main img {
+    max-width: 250px;
+  }
+
+  .productContainerFlex {
+    display: flex;
+    gap: 100px;
+    justify-content: space-evenly;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .productContainerFlex_image {
+    margin-left: -110px;
+  }
+
+  .mainProductLabel {
+    padding: 8px 10px;
+    border-radius: 3px;
+    margin-left: 180px;
+    top: 10px;
+  }
+
+  .productContainerFlex_details,
+  .ctaContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ctaContainer {
+    gap: 15px;
+    margin-left: 0;
+  }
+
+  .similarAdsContainer h2 {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 825px) {
+  .similarAdsContainer {
+    max-width: 1000px;
+  }
+}
