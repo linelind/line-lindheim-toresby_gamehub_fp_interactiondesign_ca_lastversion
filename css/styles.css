@@ -162,9 +162,10 @@ nav li {
 }
 
 .nav_icons {
+  display: flex;
   position: absolute;
   top: 20px;
-  right: 25px;
+  right: 40px;
 }
 
 .fa-shopping-cart {
@@ -318,6 +319,7 @@ form input {
     padding: 5px 10px;
     border-radius: 3px;
     margin-right: 10px;
+    max-height: 20px;
   }
 
   .accountIcon {
