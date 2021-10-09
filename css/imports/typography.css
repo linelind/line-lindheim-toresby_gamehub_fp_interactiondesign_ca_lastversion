@@ -44,6 +44,10 @@ a {
   font-size: 0.85rem;
 }
 
+.cta_Game {
+  font-size: 0.75rem;
+}
+
 .label_new,
 .productPrice {
   font-family: 'Montserrat SemiBold';

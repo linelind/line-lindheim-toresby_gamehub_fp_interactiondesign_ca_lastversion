@@ -172,6 +172,17 @@ nav li {
   margin-left: 20px;
 }
 
+.shoppingCart {
+  background-color: var(--white-colour);
+  border: 2px solid var(--darkorange-colour);
+  border-radius: 100%;
+  padding: 1px 7px;
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  display: none;
+}
+
 /*forms*/
 
 .form-wrapper {
@@ -244,7 +255,7 @@ form input {
     margin-left: 30px;
   }
 
-  .cta_viewGame {
+  .cta_Game {
     position: absolute;
     margin-top: 15px;
   }
@@ -260,7 +271,7 @@ form input {
     margin-left: 40px;
   }
 
-  .cta_viewGame {
+  .cta_Game {
     margin-top: 25px;
   }
 }
@@ -300,7 +311,7 @@ form input {
     line-height: 15px;
   }
 
-  .cta_viewGame {
+  .cta_Game {
     margin-top: 5px;
   }
 
