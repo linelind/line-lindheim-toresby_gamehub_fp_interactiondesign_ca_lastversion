@@ -100,9 +100,6 @@ main {
 .contactLink_contact {
   padding-top: 15px;
   padding-bottom: 15px;
-  color: var(--white-colour);
-  background-color: var(--darkblue-colour);
-  box-shadow: 3px 3px 5px var(--darkblue-colour);
 }
 
 /*Sign up*/
@@ -117,6 +114,11 @@ main {
 
 .cta_signUp {
   text-decoration: none;
+}
+
+.signupLink {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 @media only screen and (min-width: 450px) {
