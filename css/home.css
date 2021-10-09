@@ -42,7 +42,7 @@ h1 {
 .newsInfo {
   flex: 2;
   background-color: var(--black-colour);
-  color: var(--lightyellow-colour);
+  color: var(--white-colour);
   height: 100%;
 }
 
@@ -56,7 +56,7 @@ h1 {
 
 .newsLink {
   flex: 1;
-  background-color: var(--lightyellow-colour);
+  background-color: var(--lightpurple-colour);
   height: 100%;
   text-align: center;
 }

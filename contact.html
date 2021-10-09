@@ -46,11 +46,9 @@
             <form action="form-success.php" method="POST" id="contactForm" class="form">
               <div class="form-wrapper">
                 <label for="name">Full name (required)</label>
-                <input type="text" id="name" name="Name" />
-                <div class="formError" id="nameError">Please enter your name.</div>
+                <input type="text" id="contactName" name="Name" />
                 <label for="email">Email (required)</label>
                 <input type="email" id="contactEmail" name="Email" />
-                <div class="formError" id="contactEmailError">Please enter a valid email address.</div>
                 <label for="topic">Question topic</label>
                 <select id="topic" name="Question topic">
                   <option value=""></option>
@@ -62,7 +60,6 @@
                 </select>
                 <label for="message">Message (minimum 10 chacters)</label>
                 <textarea id="message" name="message"></textarea>
-                <div class="formError" id="messageError">Please write your question here.</div>
               </div>
               <button id="contactButton" class="cta_purple cta-send" disabled>Send</button>
             </form>

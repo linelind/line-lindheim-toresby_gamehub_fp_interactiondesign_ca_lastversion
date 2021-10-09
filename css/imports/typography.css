@@ -45,8 +45,7 @@ a {
 }
 
 .label_new,
-.productPrice,
-.formSuccessMessage {
+.productPrice {
   font-family: 'Montserrat SemiBold';
 }
 

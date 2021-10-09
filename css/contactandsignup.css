@@ -33,11 +33,22 @@ main {
   }
 }
 
-.formError {
+.formInputError {
   display: none;
   color: var(--errorred-colour);
   margin-top: 3px;
   font-size: 0.7rem;
+}
+
+.formSuccessMessage {
+  background: var(--successbackground-colour);
+  border: 2px solid var(--successgreen-colour);
+  color: var(--successgreen-colour);
+  border-radius: 3px;
+  padding: 20px;
+  margin-bottom: 15px;
+  line-height: 20px;
+  text-align: center;
 }
 
 /*Contact*/
@@ -71,16 +82,6 @@ main {
   background: var(--lightpurple-colour);
 }
 
-.formSuccessMessage {
-  background: var(--successbackground-colour);
-  border: 2px solid var(--successgreen-colour);
-  color: var(--successgreen-colour);
-  border-radius: 3px;
-  padding: 20px;
-  margin-bottom: 15px;
-  line-height: 20px;
-}
-
 /*Sign up*/
 .signUpImageContainer {
   background-image: url(../images/signup.jpg);
@@ -93,6 +94,10 @@ main {
 
 .cta_signUp {
   text-decoration: none;
+}
+
+.signupLink {
+  display: none;
 }
 
 @media only screen and (min-width: 450px) {
