@@ -6,7 +6,7 @@
     <meta name="description" content="Have a question? Please send it to us here at Game Hub and we will do our best to help you out!" />
     <title>Game Hub | Contact us</title>
     <link href="css/styles.css" rel="stylesheet" />
-    <link href="css/forms.css" rel="stylesheet" />
+    <link href="css/contactandsignup.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous" />
     <!-- Hotjar Tracking Code for https://gamehubnewproject.netlify.app/ -->
     <script>
@@ -37,29 +37,34 @@
             <i class="fas fa-envelope"></i>
           </h1>
           <section class="contact-paragraph">
-            <p>Have a question?</p>
+            <p>Have a question for us?</p>
             <p>Please fill out our contact form.</p>
           </section>
           <div class="contactImageContainer"></div>
           <div class="formbackground">
-            <form action="form-success.php" method="POST" class="form">
+            <div class="contactSuccessMessage"></div>
+            <form action="form-success.php" method="POST" id="contactForm" class="form">
               <div class="form-wrapper">
-                <label for="name">Full name</label>
-                <input type="text" id="name" name="Name" required />
-                <label for="email">Email</label>
-                <input type="email" id="email" name="Email" required />
+                <label for="name">Full name (required)</label>
+                <input type="text" id="name" name="Name" />
+                <div class="formError" id="nameError">Please enter your name.</div>
+                <label for="email">Email (required)</label>
+                <input type="email" id="contactEmail" name="Email" />
+                <div class="formError" id="contactEmailError">Please enter a valid email address.</div>
                 <label for="topic">Question topic</label>
-                <select id="topic" name="Choose topic">
+                <select id="topic" name="Question topic">
+                  <option value=""></option>
                   <option value="Delivery">Delivery</option>
                   <option value="Payment">Payment</option>
                   <option value="Selling game">Selling game</option>
                   <option value="Buying game">Buying game</option>
                   <option value="Other">Other</option>
                 </select>
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
+                <label for="message">Message (minimum 10 chacters)</label>
+                <textarea id="message" name="message"></textarea>
+                <div class="formError" id="messageError">Please write your question here.</div>
               </div>
-              <input type="submit" value="Send" class="cta_orange cta-send" />
+              <button id="contactButton" class="cta_purple cta-send" disabled>Send</button>
             </form>
           </div>
         </div>
@@ -68,5 +73,6 @@
     <footer>
       <p>&copy; 2021 Game Hub. All Right reserved Game Hub.</p>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

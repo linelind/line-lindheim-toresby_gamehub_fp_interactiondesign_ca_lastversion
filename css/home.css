@@ -8,10 +8,6 @@ h1 {
   padding-top: 30px;
 }
 
-a {
-  text-decoration: none;
-}
-
 .newsContainer img {
   max-width: 100%;
 }
@@ -45,7 +41,7 @@ a {
 
 .newsInfo {
   flex: 2;
-  background-color: #0e131d;
+  background-color: var(--black-colour);
   color: var(--lightyellow-colour);
   height: 100%;
 }
@@ -69,7 +65,7 @@ a {
   margin-top: 20px;
   font-size: 0.9rem;
   line-height: 5px;
-  color: #0e131d;
+  color: var(--black-colour);
 }
 
 .fa-long-arrow-alt-right {

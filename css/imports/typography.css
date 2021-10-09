@@ -14,6 +14,11 @@ h2 {
   font-size: 1rem;
 }
 
+a {
+  text-decoration: none;
+  color: var(--darkblue-colour);
+}
+
 .productPrice {
   font-size: 1.1rem;
 }
@@ -40,7 +45,8 @@ h2 {
 }
 
 .label_new,
-.productPrice {
+.productPrice,
+.formSuccessMessage {
   font-family: 'Montserrat SemiBold';
 }
 
