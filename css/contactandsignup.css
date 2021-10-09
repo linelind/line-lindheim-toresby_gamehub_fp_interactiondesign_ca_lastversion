@@ -51,6 +51,12 @@ main {
   text-align: center;
 }
 
+.signupLink,
+.contactLink_shopping,
+.contactLink_contact {
+  display: none;
+}
+
 /*Contact*/
 
 .fa-envelope {
@@ -82,6 +88,23 @@ main {
   background: var(--lightpurple-colour);
 }
 
+.contactLinkContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 300px;
+  margin: 15px auto;
+}
+
+.contactLink_shopping,
+.contactLink_contact {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: var(--white-colour);
+  background-color: var(--darkblue-colour);
+  box-shadow: 3px 3px 5px var(--darkblue-colour);
+}
+
 /*Sign up*/
 .signUpImageContainer {
   background-image: url(../images/signup.jpg);
@@ -94,10 +117,6 @@ main {
 
 .cta_signUp {
   text-decoration: none;
-}
-
-.signupLink {
-  display: none;
 }
 
 @media only screen and (min-width: 450px) {
