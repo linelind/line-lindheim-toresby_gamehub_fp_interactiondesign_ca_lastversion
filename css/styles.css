@@ -51,6 +51,29 @@ body {
   text-align: center;
 }
 
+.labelSmall {
+  color: var(--white-colour);
+  text-align: center;
+  padding: 5px 0px;
+  position: absolute;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 3px;
+  width: 70px;
+}
+
+.labelSmall_used {
+  background-color: var(--usedlabel-colour);
+}
+
+.labelSmall_new {
+  background-color: var(--newlabel-colour);
+}
+
+.shopPrice {
+  margin-bottom: 20px;
+}
+
 .fa-arrow-alt-circle-left {
   font-size: 2rem;
   z-index: 1000;
@@ -59,12 +82,11 @@ body {
 
 footer {
   background-color: var(--darkblue-colour);
-  position: relative;
-  bottom: 0px;
-  width: 105%;
-  margin-right: -20px;
+  position: static;
+  margin-bottom: -20px;
   margin-left: -20px;
-  padding: 10px;
+  width: 100%;
+  padding: 10px 20px;
 }
 
 /*navigation*/
@@ -110,6 +132,14 @@ footer {
 
 .signUpTextButton {
   display: none;
+  text-decoration: none;
+  color: var(--white-colour);
+  background-color: var(--darkpurple-colour);
+  padding: 8px 10px;
+  border-radius: 3px;
+  margin-right: 10px;
+  max-height: 20px;
+  margin-top: -4px;
 }
 
 .fa-bars,
@@ -136,7 +166,7 @@ nav,
 #hamburger-menu:checked ~ nav {
   display: inline-block;
   float: left;
-  position: fixed;
+  position: absolute;
   margin-top: 50px;
   z-index: 1000;
 }
@@ -259,6 +289,10 @@ form input {
     position: absolute;
     margin-top: 15px;
   }
+
+  .labelSmall {
+    margin-left: 20px;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -274,6 +308,10 @@ form input {
   .cta_Game {
     margin-top: 25px;
   }
+
+  .labelSmall {
+    margin-left: 38px;
+  }
 }
 
 @media only screen and (min-width: 700px) {
@@ -281,12 +319,20 @@ form input {
     max-width: 60%;
     margin-left: 70px;
   }
+
+  .labelSmall {
+    margin-left: 58px;
+  }
 }
 
 @media only screen and (min-width: 800px) {
   .fa-arrow-alt-circle-left {
     font-size: 2.5rem;
     padding: 20px;
+  }
+
+  .labelSmall {
+    margin-left: 55px;
   }
 }
 
@@ -319,24 +365,13 @@ form input {
     max-width: 330px;
     height: 150px;
   }
+
+  .labelSmall {
+    margin-left: -10px;
+  }
 }
 
 @media only screen and (min-width: 900px) {
-  .signUpTextButton {
-    display: inline-flex;
-    text-decoration: none;
-    color: var(--white-colour);
-    background-color: var(--darkpurple-colour);
-    padding: 5px 10px;
-    border-radius: 3px;
-    margin-right: 10px;
-    max-height: 20px;
-  }
-
-  .accountIcon {
-    display: none;
-  }
-
   .nav_icons {
     margin-right: 20px;
     margin-top: 10px;
@@ -358,6 +393,14 @@ form input {
 }
 
 @media only screen and (min-width: 1000px) {
+  .signUpTextButton {
+    display: inline-flex;
+  }
+
+  .accountIcon {
+    display: none;
+  }
+
   nav {
     display: inline-block;
   }
@@ -381,5 +424,15 @@ form input {
   .logo {
     max-width: 100px;
     margin-bottom: -10px;
+  }
+
+  .fa-shopping-cart {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .fa-shopping-cart {
+    font-size: 1.8rem;
   }
 }

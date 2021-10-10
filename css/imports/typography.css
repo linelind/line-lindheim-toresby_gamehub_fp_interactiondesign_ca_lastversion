@@ -19,8 +19,20 @@ a {
   color: var(--darkblue-colour);
 }
 
-.productPrice {
-  font-size: 1.1rem;
+.label_new,
+.productPrice,
+.labelSmall,
+.cta_orange,
+.cta_purple,
+.cta_placeOrder,
+.ctaHome,
+.homeLabel,
+.shopPrice,
+.signUpTextButton,
+.contact-paragraph p,
+form label,
+.orderTotal {
+  font-family: 'Montserrat SemiBold', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .cta_orange,
@@ -28,14 +40,27 @@ a {
 .cta_placeOrder,
 .ctaHome,
 .homeLabel {
-  font-family: 'Montserrat SemiBold';
   letter-spacing: 1px;
   text-align: center;
 }
 
-.cta_orange,
-.cta_purple {
-  font-size: 0.7rem;
+.homeLabel,
+.label_new,
+.labelSmall {
+  text-transform: uppercase;
+}
+
+.cta_Game,
+.labelSmall,
+form label,
+.shopProductInfo,
+.myAccountButton {
+  font-size: 0.75rem;
+}
+
+.cta_viewGame,
+.contact-paragraph p {
+  font-size: 0.8rem;
 }
 
 .addToCartButton,
@@ -44,19 +69,23 @@ a {
   font-size: 0.85rem;
 }
 
-.cta_Game {
-  font-size: 0.75rem;
+.homeLabel,
+.newsLink p {
+  font-size: 0.9rem;
 }
 
-.label_new,
-.productPrice {
-  font-family: 'Montserrat SemiBold';
+.shopPrice {
+  font-size: 0.95rem;
 }
 
 .nav_textlinks a {
   text-decoration: none;
-  color: var(--darkblue-colour);
   font-size: 1rem;
+}
+
+.productPrice,
+.orderTotal {
+  font-size: 1.1rem;
 }
 
 footer {
@@ -65,26 +94,10 @@ footer {
   text-align: center;
 }
 
-/*Home page*/
-.homeLabel {
-  font-size: 0.9rem;
-}
-
-/*Contact page*/
-.contact-paragraph p {
-  font-size: 0.8rem;
-  font-family: 'Montserrat SemiBold';
-}
-
-form label {
-  font-size: 0.75rem;
-  font-family: 'Montserrat SemiBold';
-}
-
-/*Checkout page*/
-.orderTotal {
-  font-size: 1.1rem;
-  font-family: 'Montserrat SemiBold';
+@media only screen and (min-width: 600px) {
+  .shopProductInfo {
+    font-size: 0.85rem;
+  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -100,13 +113,57 @@ form label {
     font-size: 1.2rem;
   }
 
+  .shopProductInfo {
+    font-size: 0.9rem;
+  }
+
+  form label {
+    font-size: 0.85rem;
+  }
+
   footer {
     font-size: 0.75rem;
+  }
+}
+
+@media only screen and (min-width: 825px) {
+  .shopProductInfo {
+    font-size: 0.8rem;
+  }
+
+  .shopPrice {
+    font-size: 0.95rem;
   }
 }
 
 @media only screen and (min-width: 900px) {
   .newsInfo p {
     font-size: 0.75rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .nav_textlinks a,
+  .signUpTextButton {
+    font-size: 0.85rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .nav_textlinks a,
+  .signUpTextButton {
+    font-size: 1rem;
+  }
+
+  .addToCartButton {
+    font-size: 1rem;
+  }
+
+  .productPrice {
+    font-size: 1.3rem;
+  }
+
+  .newsLink p {
+    font-size: 1rem;
   }
 }

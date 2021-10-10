@@ -16,7 +16,7 @@ function cartCount() {
         button.innerHTML = "Add to cart";
         button.style.backgroundColor = "var(--darkorange-colour)";
 
-    }, 1700);
+    }, 1000);
 
 }
 
