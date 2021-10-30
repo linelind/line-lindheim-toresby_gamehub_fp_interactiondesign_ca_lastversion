@@ -26,45 +26,58 @@ async function fetchGame() {
             inStock = `<i class="fas fa-times-circle"></i>`;
         };
 
-        gameContainer.innerHTML =  `<div>
+        const salePrice= details.prices.sale_price;
+        const regularPrice= details.prices.regular_price;
+
+
+        gameContainer.innerHTML =  `<div class="gameDetailHeader">
                                         <h1>${details.name}</h1>
-                                        <p>${details.short_description}</p>
+                                        <p class="shortDescription">${details.short_description}</p>
+                                    </div>
+                                    <div class="flexProductContainer">
                                         <div class="productImage">                           
                                             <img src="${image[1].src}" alt="${image[1].alt}"/> 
                                         </div>
-                                        <div class="productDescription">  
-                                            <p>${details.price_html}</p>
-                                            <button type="button" class="cta_orange addToCartButton">Add to cart</button>
-                                            <p>${details.description}</p>
-                                            <p>Is the item in stock: ${inStock}</p>
+                                        <div class="productDescription">
+                                            <div class="ctaContainer">  
+                                                <p class="productPrice">${details.price_html}</p>
+                                                <button type="button" class="cta_orange addToCartButton">Add to cart</button>
+                                            </div>
                                         </div>
+                                    </div>
+                                    <div class="detailsContainer">
+                                        <p>${details.description}</p>
+                                        <p class="inStockInfo">Is the item in stock? ${inStock}</p>
                                     </div>`;
       
-    
-    
-const button = document.querySelector(".addToCartButton");
-const shoppingCart = document.querySelector(".shoppingCart");
 
-let count = 0;
+        const title = document.querySelector("title");
 
-function cartCount() {
-    count++
-    shoppingCart.style.display = "block";
-    shoppingCart.innerHTML = count;
-    button.innerHTML = "Game added";
-    button.style.backgroundColor = "var(--successgreen-colour)";
+        title.innerHTML = `Game Hub | ${details.name}`;
 
-    setTimeout(function() {
-        button.innerHTML = "Add to cart";
-        button.style.backgroundColor = "var(--darkorange-colour)";
 
-    }, 1000);
+        const button = document.querySelector(".addToCartButton");
+        const shoppingCart = document.querySelector(".shoppingCart");
 
-}
+        let count = 0;
 
-button.addEventListener("mouseup", cartCount);
-    
-                                }
+        function cartCount() {
+            count++
+            shoppingCart.style.display = "block";
+            shoppingCart.innerHTML = count;
+            button.innerHTML = "Added";
+            button.style.backgroundColor = "var(--successgreen-colour)";
+
+            setTimeout(function() {
+            button.innerHTML = "Add to cart";
+            button.style.backgroundColor = "var(--darkorange-colour)";
+            }, 700);
+        }   
+
+        button.addEventListener("mouseup", cartCount);
+
+    }
+
     catch(error) {
         console.log(error);
         gameContainer.innerHTML = message("error", error);
