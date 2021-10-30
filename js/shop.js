@@ -1,4 +1,3 @@
-
 const shopContainer = document.querySelector(".shopContainer");
 const url = "http://linelind.one/GameHubAPI/wp-json/wc/store/products";
 
@@ -28,11 +27,12 @@ async function fetchGames() {
                                                 <div class="details">
                                                     <h2>${game.name}</h2>   
                                                     <p class="shopPrice">${game.price_html}</p> 
-                                                    <p class="cta_orange cta_viewGame">${game.add_to_cart.text}</p>                                                                                                                                                     
+                                                    <p class="cta_orange cta_viewGame">View game</p>                                                                                                                                                     
                                                 </div>
                                         </a>`;
         
 
+        
         }); 
 
     }
@@ -45,3 +45,5 @@ async function fetchGames() {
 }
 
 fetchGames();
+
+
