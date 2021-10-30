@@ -26,9 +26,6 @@ async function fetchGame() {
             inStock = `<i class="fas fa-times-circle"></i>`;
         };
 
-        const salePrice= details.prices.sale_price;
-        const regularPrice= details.prices.regular_price;
-
 
         gameContainer.innerHTML =  `<div class="gameDetailHeader">
                                         <h1>${details.name}</h1>

@@ -39,11 +39,6 @@
   text-align: center;
 }
 
-.productPrice del {
-  color: var(--errorred-colour);
-  font-size: 80%;
-}
-
 .addToCartButton {
   min-height: 40px;
   width: 150px;
