@@ -80,6 +80,15 @@ body {
   position: relative;
 }
 
+del {
+  color: var(--errorred-colour);
+  font-size: 90%;
+}
+
+ins {
+  text-decoration: none;
+}
+
 .loader {
   border: 25px solid var(--lightgrey-colour);
   border-top: 25px solid var(--darkblue-colour);
