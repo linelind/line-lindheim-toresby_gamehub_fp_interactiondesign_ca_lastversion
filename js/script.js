@@ -21,4 +21,3 @@ function cartCount() {
 }
 
 button.addEventListener("mouseup", cartCount);
-

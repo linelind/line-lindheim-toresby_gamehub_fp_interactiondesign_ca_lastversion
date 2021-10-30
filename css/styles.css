@@ -80,6 +80,25 @@ body {
   position: relative;
 }
 
+.loader {
+  border: 25px solid var(--lightgrey-colour);
+  border-top: 25px solid var(--darkblue-colour);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear infinite;
+  margin: 100px auto 150px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 footer {
   background-color: var(--darkblue-colour);
   position: static;
