@@ -1,3 +1,18 @@
+.productImage img {
+  max-width: 250px;
+}
+
+.productDescription {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+}
+
+.addToCartButton {
+  min-height: 40px;
+  max-width: 180px;
+}
+
 .productYear {
   text-align: center;
 }

@@ -27,7 +27,7 @@ async function fetchGames() {
                                                 </div>
                                                 <div class="details">
                                                     <h2>${game.name}</h2>   
-                                                    <p>${game.price_html}</p> 
+                                                    <p class="shopPrice">${game.price_html}</p> 
                                                     <p class="cta_orange cta_viewGame">${game.add_to_cart.text}</p>                                                                                                                                                     
                                                 </div>
                                         </a>`;
