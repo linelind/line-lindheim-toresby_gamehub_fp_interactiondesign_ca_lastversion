@@ -92,8 +92,8 @@ async function fetchGames() {
         }); 
     }
     catch(error) {
-        shopContainer.innerHTML = createMessage("An error occured while calling the API.");
+        shopContainer.innerHTML = createMessage("Oh no! An error occured while fetching the products.");
     }
-}
+};
 
 fetchGames();

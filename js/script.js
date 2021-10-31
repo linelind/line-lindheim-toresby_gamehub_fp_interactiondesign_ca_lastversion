@@ -4,7 +4,6 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id");
 const url = "https://linelind.one/GameHubAPI/wp-json/wc/store/products/" + id;
 
-
 async function fetchGame() {
 
     try {
@@ -76,7 +75,6 @@ async function fetchGame() {
 
         title.innerHTML = `Game Hub | ${details.name}`;
 
-
         const button = document.querySelector(".addToCartButton");
         const shoppingCart = document.querySelector(".shoppingCart");
 
@@ -100,8 +98,7 @@ async function fetchGame() {
     }
 
     catch(error) {
-        console.log(error);
-        gameContainer.innerHTML = createMessage("An error occured while calling the API.");
+        gameContainer.innerHTML = createMessage("Oh no! An error occured while fetching the products.");
     }
     
 }

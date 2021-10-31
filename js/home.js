@@ -28,15 +28,11 @@ async function fetchGames() {
                 }
             }
         }); 
-
     }
-
     catch(error) {
-        console.log(error);
-        featuredContainer.innerHTML = message("error", error);
+        featuredContainer.innerHTML = createMessage("Can't fetch products.");
     }
-
-}
+};
 
 fetchGames();
 
