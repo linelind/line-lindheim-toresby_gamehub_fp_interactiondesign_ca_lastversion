@@ -10,14 +10,19 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous" />
     <!-- Hotjar Tracking Code for https://gamehubnewproject.netlify.app/ -->
     <script>
-      (function(h,o,t,j,a,r){
-          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-          h._hjSettings={hjid:2642646,hjsv:6};
-          a=o.getElementsByTagName('head')[0];
-          r=o.createElement('script');r.async=1;
-          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-          a.appendChild(r);
-      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2642646, hjsv: 6 };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script');
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
   </head>
   <body>
@@ -61,50 +66,23 @@
         <h2>Sell a Game</h2>
         <div class="sellGamesAccountFlex">
           <div class="sellGameAccountForm">
-        <form action="form-success.php" method="POST" class="formSellGame">
-          <div class="form-wrapper">
-            <label for="title">Game title</label>
-            <input type="text" id="title" name="Game title" required />
-            <label for="price">Price (in NOK)</label>
-            <input type="text" id="price" name="Price" required />
-            <label for="year">Year released</label>
-            <input type="text" id="year" name="Year" required />
-            <label for="description">Description</label>
-            <textarea id="description" name="description"></textarea>
-            <input type="button" value="upload image(s) +" class="buttonUploadImage" />
+            <form action="form-success.php" method="POST" class="formSellGame">
+              <div class="form-wrapper">
+                <label for="title">Game title</label>
+                <input type="text" id="title" name="Game title" required />
+                <label for="price">Price (in NOK)</label>
+                <input type="text" id="price" name="Price" required />
+                <label for="year">Year released</label>
+                <input type="text" id="year" name="Year" required />
+                <label for="description">Description</label>
+                <textarea id="description" name="description"></textarea>
+                <input type="button" value="upload image(s) +" class="buttonUploadImage" />
+              </div>
+              <input type="submit" value="Create ad" class="cta_orange buttonCreateAd" />
+            </form>
           </div>
-          <input type="submit" value="Create ad" class="cta_orange buttonCreateAd" />
-        </form>
-      </div>
-        <div class="sellGameAccountImage">
-          <img src="/images/sellgames_alt.jpg" alt="hand holding a controller.">
-        </div>
-      </div>
-      </section>
-      <section class="activeAdsContainer">
-        <h2>My Active Ads</h2>
-        <div class="productsContainer">
-          <div class="shopProductFrame">
-            <div class="shopProductImage">
-               <img src="images/products/GameHub_covers.jpg" alt="Game cover Ping Pong." />
-            </div>
-            <div class="shopProductInfo">
-               <h3>Ping Pong</h2>
-               <p>(2015)</p>
-               <p class="shopPrice">299 NOK</p>
-               <p class="cta_purple editAdButton">Edit ad</p>
-            </div>
-          </div>
-          <div class="shopProductFrame">
-            <div class="shopProductImage">
-               <img src="images/products/GameHub_covers9.jpg" alt="Game cover Cyberpunk." />
-            </div>
-            <div class="shopProductInfo">
-               <h3>Cyberpunk</h2>
-               <p>(2021)</p>
-               <p class="shopPrice">699 NOK</p>
-               <p class="cta_purple editAdButton">Edit ad</p>
-            </div>
+          <div class="sellGameAccountImage">
+            <img src="/images/sellgames_alt.jpg" alt="hand holding a controller." />
           </div>
         </div>
       </section>
