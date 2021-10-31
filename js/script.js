@@ -77,7 +77,7 @@ async function fetchGame() {
 
     catch(error) {
         console.log(error);
-        gameContainer.innerHTML = message("error", error);
+        gameContainer.innerHTML = createMessage("An error occured while calling the API.");
     }
     
 }

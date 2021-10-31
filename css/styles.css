@@ -80,6 +80,14 @@ body {
   position: relative;
 }
 
+.error {
+  padding: 1rem;
+  margin: 50px auto 150px auto;
+  color: var(--errorred-colour);
+  border: 1px solid var(--errorred-colour);
+  background: var(--errorbackground-colour);
+}
+
 del {
   color: var(--errorred-colour);
   font-size: 90%;
