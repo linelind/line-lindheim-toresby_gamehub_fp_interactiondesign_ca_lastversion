@@ -2,7 +2,7 @@ const gameContainer = document.querySelector(".gameDetails");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
-const url = "http://linelind.one/GameHubAPI/wp-json/wc/store/products/" + id;
+const url = "https://linelind.one/GameHubAPI/wp-json/wc/store/products/" + id;
 
 
 async function fetchGame() {
