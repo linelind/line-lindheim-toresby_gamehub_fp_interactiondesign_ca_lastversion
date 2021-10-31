@@ -8,56 +8,20 @@ h1 {
   padding-top: 40px;
 }
 
-/*Filters start*/
-
-#filter-menu,
-.filterContainer_filters {
-  display: none;
-}
-
-#filter-menu:checked ~ .filterContainer_filters {
-  z-index: 1000;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.filterContainer_filters button {
-  display: block;
-  margin: 20px 20px;
-}
-
-/*Fitlers stop*/
-
 .filterContainer {
   background-color: var(--lightgrey-colour);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding: 20px;
-  margin: 10px 50px;
+  margin: 10px 80px;
   border-radius: 3px;
-}
-
-.filterContainer .filter-label {
-  background-color: var(--darkblue-colour);
   text-align: center;
-  color: var(--white-colour);
-  min-width: 200px;
-  margin: auto;
-}
-
-.filterContainer button,
-.filter-label {
-  border: none;
-  border-radius: 3px;
-  padding: 7px 10px;
-  margin: 10px;
 }
 
 .filterContainer button {
   background-color: var(--white-colour);
-  color: var(--darkblue-colour);
+  border: none;
+  border-radius: 3px;
+  width: 100px;
+  padding: 8px 15px;
 }
 
 .shopContainer {

@@ -88,6 +88,7 @@ async function fetchGames() {
                 json.sort((a,b) => (a.name > b.name) ? 1 : -1);
                 sortContent(json);
             })
+
         }); 
     }
     catch(error) {
