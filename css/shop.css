@@ -8,21 +8,56 @@ h1 {
   padding-top: 40px;
 }
 
+/*Filters start*/
+
+#filter-menu,
+.filterContainer_filters {
+  display: none;
+}
+
+#filter-menu:checked ~ .filterContainer_filters {
+  z-index: 1000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filterContainer_filters button {
+  display: block;
+  margin: 20px 20px;
+}
+
+/*Fitlers stop*/
+
 .filterContainer {
   background-color: var(--lightgrey-colour);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 20px;
-  margin: 30px 80px;
+  margin: 10px 50px;
   border-radius: 3px;
 }
 
-.sortAZ {
-  border: none;
+.filterContainer .filter-label {
+  background-color: var(--darkblue-colour);
+  text-align: center;
   color: var(--white-colour);
-  background-color: var(--darkpurple-colour);
+  min-width: 200px;
+  margin: auto;
+}
+
+.filterContainer button,
+.filter-label {
+  border: none;
   border-radius: 3px;
   padding: 7px 10px;
-  margin: auto;
+  margin: 10px;
+}
+
+.filterContainer button {
+  background-color: var(--white-colour);
+  color: var(--darkblue-colour);
 }
 
 .shopContainer {
