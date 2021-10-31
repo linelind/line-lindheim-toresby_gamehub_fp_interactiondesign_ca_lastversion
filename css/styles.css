@@ -42,32 +42,16 @@ body {
   background-color: var(--darkpurple-colour);
 }
 
-.label_new {
-  padding: 5px 0px;
-  min-width: 50px;
-  max-width: 50px;
-  background-color: var(--darkpurple-colour);
-  color: var(--white-colour);
-  text-align: center;
-}
-
-.labelSmall {
-  color: var(--white-colour);
+.saleLabel {
+  background-color: var(--lightyellow-colour);
+  color: var(--darkorange-colour);
+  border: 2px solid var(--darkorange-colour);
+  text-transform: uppercase;
+  font-weight: bold;
   text-align: center;
   padding: 5px 0px;
-  position: absolute;
-  margin-top: -10px;
-  margin-left: -10px;
   border-radius: 3px;
   width: 70px;
-}
-
-.labelSmall_used {
-  background-color: var(--usedlabel-colour);
-}
-
-.labelSmall_new {
-  background-color: var(--newlabel-colour);
 }
 
 .shopPrice {

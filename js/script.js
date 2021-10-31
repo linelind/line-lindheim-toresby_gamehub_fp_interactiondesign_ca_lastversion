@@ -26,8 +26,32 @@ async function fetchGame() {
             inStock = `<i class="fas fa-times-circle"></i>`;
         };
 
+        const gameOnSale = details.on_sale;
 
-        gameContainer.innerHTML =  `<div class="gameDetailHeader">
+        if(gameOnSale === true){
+
+            gameContainer.innerHTML =  `<div class="gameDetailHeader">
+                                            <h1>${details.name}</h1>
+                                            <p class="shortDescription">${details.short_description}</p>
+                                        </div>
+                                        <div class="flexProductContainer">
+                                            <div class="productImage"> 
+                                                <p class="saleLabel saleLabelGame">Sale</p>                          
+                                                <img src="${image[1].src}" alt="${image[1].alt}"/> 
+                                            </div>
+                                            <div class="productDescription">
+                                                <div class="ctaContainer">  
+                                                    <p class="productPrice">${details.price_html}</p>
+                                                    <button type="button" class="cta_orange addToCartButton">Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detailsContainer">
+                                            <p>${details.description}</p>
+                                            <p class="inStockInfo">Is the item in stock? ${inStock}</p>
+                                        </div>`;
+        } else {
+            gameContainer.innerHTML =  `<div class="gameDetailHeader">
                                         <h1>${details.name}</h1>
                                         <p class="shortDescription">${details.short_description}</p>
                                     </div>
@@ -46,7 +70,7 @@ async function fetchGame() {
                                         <p>${details.description}</p>
                                         <p class="inStockInfo">Is the item in stock? ${inStock}</p>
                                     </div>`;
-      
+        }
 
         const title = document.querySelector("title");
 

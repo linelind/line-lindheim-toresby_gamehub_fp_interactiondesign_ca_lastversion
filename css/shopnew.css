@@ -34,3 +34,9 @@ h1 {
 img {
   max-width: 200px;
 }
+
+.saleLabelShop {
+  position: absolute;
+  margin-top: -15px;
+  margin-left: 10px;
+}

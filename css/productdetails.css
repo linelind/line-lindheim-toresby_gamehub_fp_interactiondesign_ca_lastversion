@@ -17,6 +17,13 @@
 .productImage {
   margin: auto;
   text-align: center;
+  max-width: 350px;
+}
+
+.saleLabelGame {
+  margin-left: 85px;
+  margin-bottom: -15px;
+  position: relative;
 }
 
 .productImage img {
@@ -86,6 +93,11 @@
     margin: 70px auto;
     display: flex;
     gap: 50px;
+  }
+
+  .saleLabelGame {
+    margin-left: 20px;
+    padding: 7px;
   }
 
   .productImage img {
