@@ -1,5 +1,5 @@
 const featuredContainer = document.querySelector(".featuredGames");
-const url = "http://linelind.one/GameHubAPI/wp-json/wc/store/products";
+const url = "https://linelind.one/GameHubAPI/wp-json/wc/store/products";
 
 async function fetchGames() {
 
