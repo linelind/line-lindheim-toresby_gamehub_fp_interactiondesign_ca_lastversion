@@ -188,7 +188,7 @@ nav,
   float: left;
   position: absolute;
   margin-top: 50px;
-  z-index: 1000;
+  z-index: 5000;
 }
 
 nav li {
