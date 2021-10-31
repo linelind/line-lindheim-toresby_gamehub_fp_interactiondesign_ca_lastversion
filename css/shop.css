@@ -8,6 +8,23 @@ h1 {
   padding-top: 40px;
 }
 
+.filterContainer {
+  background-color: var(--lightgrey-colour);
+  text-align: center;
+  padding: 20px;
+  margin: 30px 80px;
+  border-radius: 3px;
+}
+
+.sortAZ {
+  border: none;
+  color: var(--white-colour);
+  background-color: var(--darkpurple-colour);
+  border-radius: 3px;
+  padding: 7px 10px;
+  margin: auto;
+}
+
 .shopContainer {
   display: flex;
   flex-wrap: wrap;
