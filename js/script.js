@@ -1,3 +1,6 @@
+const modal = document.querySelector(".modal");
+const modalContent = document.querySelector(".modal-content");
+
 const gameContainer = document.querySelector(".gameDetails");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -9,8 +12,6 @@ async function fetchGame() {
     try {
         const response = await fetch(url);
         const details = await response.json();
-
-        console.log(details);
 
         const image = details.images;
 
@@ -56,7 +57,7 @@ async function fetchGame() {
                                     </div>
                                     <div class="flexProductContainer">
                                         <div class="productImage">                           
-                                            <img src="${image[1].src}" alt="${image[1].alt}"/> 
+                                            <img src="${image[1].src}" alt="${image[1].alt}" class="productImage-specific"/> 
                                         </div>
                                         <div class="productDescription">
                                             <div class="ctaContainer">  
@@ -70,6 +71,7 @@ async function fetchGame() {
                                         <p class="inStockInfo">Is the item in stock? ${inStock}</p>
                                     </div>`;
         }
+
 
         const title = document.querySelector("title");
 
@@ -95,6 +97,23 @@ async function fetchGame() {
 
         button.addEventListener("mouseup", cartCount);
 
+
+        const modalImage = document.querySelector(".productImage-specific");
+        modalImage.addEventListener("click", displayModal);
+        
+        function displayModal() {
+            modal.style.display = "block"; 
+
+            modalContent.innerHTML = `<div>
+                                        <img src="${image[1].src}" alt="${image[1].alt}"/> 
+                                    </div>`;  
+        }
+
+        modal.onclick = function() {
+            modal.style.display = "none";
+        }
+
+
     }
 
     catch(error) {
@@ -104,3 +123,5 @@ async function fetchGame() {
 }
 
 fetchGame();
+
+
