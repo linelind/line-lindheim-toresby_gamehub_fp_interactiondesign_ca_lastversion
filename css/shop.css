@@ -16,12 +16,18 @@ h1 {
   text-align: center;
 }
 
-.filterContainer button {
+.sortAZ {
   background-color: var(--white-colour);
   border: none;
   border-radius: 3px;
   width: 100px;
   padding: 8px 15px;
+}
+
+.sortAZ:hover {
+  color: var(--white-colour);
+  background-color: var(--darkblue-colour);
+  transition: all ease 0.4s;
 }
 
 .shopContainer {
@@ -39,6 +45,11 @@ h1 {
   margin: 30px;
   text-decoration: none;
   box-shadow: 0px 0px 10px var(--lightgrey-colour);
+}
+
+.gameCard:hover {
+  transform: scale(1.02);
+  transition: all ease 0.2s;
 }
 
 .details {
