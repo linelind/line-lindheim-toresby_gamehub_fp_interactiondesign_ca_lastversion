@@ -211,7 +211,7 @@ nav li {
   padding-bottom: 7px;
 }
 
-.nav_textlinks li:not(.current):hover {
+.nav_textlinks li:hover {
   border-bottom: 2px solid var(--blue-colour);
 }
 
@@ -302,6 +302,11 @@ form input {
     display: inline-flex;
   }
 
+  .signUpTextButton:hover {
+    background-color: var(--darkblue-colour);
+    transition: all ease 0.2s;
+  }
+
   .accountIcon {
     display: none;
   }
@@ -334,10 +339,31 @@ form input {
   .fa-shopping-cart {
     font-size: 1.6rem;
   }
+
+  .fa-shopping-cart:hover {
+    transform: scale(1.04);
+    transition: 0.1s;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   .fa-shopping-cart {
     font-size: 1.8rem;
+  }
+
+  .nav_textlinks {
+    left: 80px;
+  }
+
+  .nav_icons {
+    right: 80px;
+  }
+
+  .fa-arrow-alt-circle-left {
+    left: 50px;
+  }
+
+  .current {
+    padding-bottom: 5px;
   }
 }

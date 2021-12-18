@@ -98,7 +98,8 @@ async function fetchGame() {
         button.addEventListener("mouseup", cartCount);
 
 
-        const modalImage = document.querySelector(".productImage-specific");
+        const modalImage = document.querySelector(".productImage img");
+        
         modalImage.addEventListener("click", displayModal);
         
         function displayModal() {
