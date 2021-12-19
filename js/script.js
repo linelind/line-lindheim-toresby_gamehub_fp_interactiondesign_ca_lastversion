@@ -36,7 +36,8 @@ async function fetchGame() {
                                         </div>
                                         <div class="flexProductContainer">
                                             <div class="productImage"> 
-                                                <p class="saleLabel saleLabelGame">Sale</p>                          
+                                                <p class="saleLabel saleLabelGame">Sale</p>  
+                                                <i class="fas fa-search-plus"></i>                        
                                                 <img src="${image[1].src}" alt="${image[1].alt}"/> 
                                             </div>
                                             <div class="productDescription">
@@ -56,7 +57,8 @@ async function fetchGame() {
                                         <p class="shortDescription">${details.short_description}</p>
                                     </div>
                                     <div class="flexProductContainer">
-                                        <div class="productImage">                           
+                                        <div class="productImage">
+                                            <i class="fas fa-search-plus"></i>                             
                                             <img src="${image[1].src}" alt="${image[1].alt}" class="productImage-specific"/> 
                                         </div>
                                         <div class="productDescription">
@@ -99,8 +101,10 @@ async function fetchGame() {
 
 
         const modalImage = document.querySelector(".productImage img");
+        const modalZoomIcon = document.querySelector(".fa-search-plus");
         
         modalImage.addEventListener("click", displayModal);
+        modalZoomIcon.addEventListener("click", displayModal);
         
         function displayModal() {
             modal.style.display = "block"; 

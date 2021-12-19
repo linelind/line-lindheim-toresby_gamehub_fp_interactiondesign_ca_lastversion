@@ -21,9 +21,10 @@
 }
 
 .saleLabelGame {
-  margin-left: 85px;
+  margin-left: 100px;
   margin-bottom: -15px;
   position: relative;
+  z-index: 100;
 }
 
 .productImage img {
@@ -33,6 +34,19 @@
 .productImage img:hover {
   transform: scale(1.04);
   transition: all ease 0.2s;
+  cursor: pointer;
+}
+
+.flexProductContainer .fa-search-plus {
+  position: relative;
+  top: -20px;
+  left: 200px;
+  font-size: 18px;
+  color: var(--white-colour);
+  background-color: var(--black-transparent);
+  padding: 8px;
+  border-radius: 100px;
+  z-index: 100;
 }
 
 .productDescription {
@@ -54,6 +68,13 @@
 .addToCartButton {
   min-height: 40px;
   width: 150px;
+}
+
+.addToCartButton:hover,
+.fa-arrow-alt-circle-left:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+  transition: 0.1s;
 }
 
 .detailsContainer {
@@ -126,12 +147,17 @@
   }
 
   .saleLabelGame {
-    margin-left: 20px;
+    margin-left: 60px;
     padding: 7px;
   }
 
   .productImage img {
     max-width: 250px;
+  }
+
+  .flexProductContainer .fa-search-plus {
+    left: 250px;
+    font-size: 21px;
   }
 
   .ctaContainer {
@@ -156,5 +182,16 @@
 
   .productImage img {
     max-width: 300px;
+  }
+
+  .saleLabelGame {
+    margin-left: 50px;
+    margin-bottom: -60px;
+  }
+
+  .flexProductContainer .fa-search-plus {
+    top: 370px;
+    left: 120px;
+    font-size: 21px;
   }
 }

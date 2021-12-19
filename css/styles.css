@@ -211,10 +211,6 @@ nav li {
   padding-bottom: 7px;
 }
 
-.nav_textlinks li:hover {
-  border-bottom: 2px solid var(--blue-colour);
-}
-
 .nav_icons {
   display: flex;
   position: absolute;
@@ -298,6 +294,10 @@ form input {
 }
 
 @media only screen and (min-width: 1000px) {
+  .nav_textlinks li:hover {
+    border-bottom: 2px solid var(--blue-colour);
+  }
+
   .signUpTextButton {
     display: inline-flex;
   }
